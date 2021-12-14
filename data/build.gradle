@@ -13,6 +13,8 @@ android {
 dependencies {
     implementation project(Modules.core)
     implementation project(Modules.domain)
-
+    implementation Deps.coroutines
     implementation Deps.koin
+    implementation Libs.gson
+    implementation Libs.preference
 }

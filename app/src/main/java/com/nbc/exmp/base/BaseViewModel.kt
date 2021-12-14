@@ -1,4 +1,4 @@
-package com.nbc.core.base
+package com.nbc.exmp.base
 
 import androidx.lifecycle.ViewModel
 

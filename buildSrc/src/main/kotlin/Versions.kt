@@ -9,4 +9,7 @@ object Versions {
     const val espressoCore = "3.4.0"
 
     const val koin = "3.1.4"
+    const val coroutines = "1.6.0-RC2"
+    const val gson = "2.8.9"
+    const val preference = "1.1.1"
 }

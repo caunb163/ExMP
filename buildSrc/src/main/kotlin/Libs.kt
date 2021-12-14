@@ -13,6 +13,12 @@ object Libs {
     const val koinNavigation = "io.insert-koin:koin-androidx-navigation:${Versions.koin}"
     const val koinCompat = "io.insert-koin:koin-android-compat:${Versions.koin}"
     const val koinWorkManager = "io.insert-koin:koin-androidx-workmanager:${Versions.koin}"
+
+    const val coroutines = "org.jetbrains.kotlinx:kotlinx-coroutines-core:${Versions.coroutines}"
+    const val coroutinesAndroid = "org.jetbrains.kotlinx:kotlinx-coroutines-android:${Versions.coroutines}"
+
+    const val gson = "com.google.code.gson:gson:${Versions.gson}"
+    const val preference = "androidx.preference:preference-ktx:${Versions.preference}"
 }
 
 object Deps {
@@ -38,5 +44,10 @@ object Deps {
         Libs.koinNavigation,
         Libs.koinCompat,
         Libs.koinWorkManager
+    )
+
+    val coroutines = arrayOf(
+        Libs.coroutines,
+        Libs.coroutinesAndroid
     )
 }

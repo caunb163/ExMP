@@ -1,4 +1,4 @@
-package com.nbc.core.base
+package com.nbc.exmp.base
 
 import android.os.Bundle
 import android.view.LayoutInflater

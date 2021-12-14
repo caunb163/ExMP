@@ -1,7 +1,5 @@
-plugins {
-    id 'java-library'
-    id 'kotlin'
-}
+apply plugin: 'java-library'
+apply plugin: 'kotlin'
 
 java {
     sourceCompatibility = JavaVersion.VERSION_11
@@ -10,6 +8,6 @@ java {
 
 dependencies {
     implementation project(Modules.core)
-
-    implementation Deps.koin
+    implementation Deps.coroutines
+    implementation Libs.koin
 }
