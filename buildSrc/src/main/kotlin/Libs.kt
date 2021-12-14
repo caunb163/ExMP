@@ -7,6 +7,12 @@ object Libs {
     const val junit = "junit:junit:${Versions.junit}"
     const val extJunit = "androidx.test.ext:junit:${Versions.extJunit}"
     const val espressoCore = "androidx.test.espresso:espresso-core:${Versions.espressoCore}"
+
+    const val koin = "io.insert-koin:koin-core:${Versions.koin}"
+    const val koinAndroid = "io.insert-koin:koin-android:${Versions.koin}"
+    const val koinNavigation = "io.insert-koin:koin-androidx-navigation:${Versions.koin}"
+    const val koinCompat = "io.insert-koin:koin-android-compat:${Versions.koin}"
+    const val koinWorkManager = "io.insert-koin:koin-androidx-workmanager:${Versions.koin}"
 }
 
 object Deps {
@@ -24,5 +30,13 @@ object Deps {
     val androidTest = arrayOf(
         Libs.extJunit,
         Libs.espressoCore
+    )
+
+    val koin = arrayOf(
+        Libs.koin,
+        Libs.koinAndroid,
+        Libs.koinNavigation,
+        Libs.koinCompat,
+        Libs.koinWorkManager
     )
 }

@@ -1,4 +1,5 @@
 apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
 
 android {
     compileSdk Configs.compileSdk
@@ -19,6 +20,10 @@ android {
     }
     kotlinOptions {
         jvmTarget = JavaVersion.VERSION_11.toString()
+    }
+
+    buildFeatures {
+        dataBinding = true
     }
 }
 

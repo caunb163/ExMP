@@ -1,4 +1,4 @@
-apply plugin: 'com.android.application'
+apply plugin: 'com.android.library'
 apply from: '../app_build.gradle'
 
 android {
@@ -8,13 +8,7 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-
 }
 
 dependencies {
-    implementation project(Modules.core)
-    implementation project(Modules.domain)
-    implementation project(Modules.data)
-
-    implementation Deps.koin
 }
